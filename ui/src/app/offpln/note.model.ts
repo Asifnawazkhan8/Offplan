@@ -1,0 +1,43 @@
+export interface Note {
+  id: number;
+  name: string;
+  location: string;
+  developer:string;
+  status: string;
+  units: BigInteger;
+  lunchdate: string;
+  studio: BigInteger;
+  onebed: BigInteger;
+  twobed: BigInteger;
+  threebed: BigInteger;
+  fourbed:BigInteger;
+  fivebed:BigInteger;
+  paymentyear: string;
+  paymentplan:string;
+  psfaverage:string;
+  booking: string;
+  firstinstallment: string;
+  dld: string;
+  handover: string;
+  posthandover: string;
+  servicecharges: string;
+  maidroom: string;
+  floors: string;
+  desp: string;
+  freehold: string;
+  furnished: string;
+  select: string;
+  stprice:bigint;
+  stsize:bigint;
+  obprice:bigint;
+  obsize:bigint;
+  twprice:bigint;
+  twsize:bigint;
+  thprice:bigint;
+  thsize:bigint;
+  fuprice:bigint;
+  fusize:bigint;
+  fvprice:bigint;
+  fvsize:bigint;
+  propertyType: string; // Update property name to use camelCase
+}

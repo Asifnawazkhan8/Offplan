@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+<body >
+    <div class="container-fluid" style="background-image: url('../assets/offplan.jpg');">
+        <h1 class="text-center">OffPlan Property Listing Form</h1>
+        <form (ngSubmit)="submitForm()">
+            <label for="name">Project Name:</label>
+            <input  class="form-control" type="text" id="name" name="name" [(ngModel)]="formData.name" [ngModelOptions]="{ standalone: true }">
+            
+
+            <label for="location">Location:</label>
+            <input class="form-control" type="text" id="location" name="location" [(ngModel)]="formData.location" [ngModelOptions]="{ standalone: true }">
+
+            <label for="Developer">Developer:</label>
+            <input class="form-control" type="text" id="developer" name="developer" [(ngModel)]="formData.developer" [ngModelOptions]="{ standalone: true }">
+
+            <div style="background-color: transparent;" class="container">
+                <div  class="row">
+                    <div class="col">
+                        <label for="property">Type:</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.studio" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.stsize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.stprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: transparent;" class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="property">Type:</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.onebed" [ngModelOptions]="{ standalone: true }">
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.obsize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.obprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: transparent;" class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="property">Type:</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.twobed" [ngModelOptions]="{ standalone: true }">
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.twsize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.twprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: transparent;" class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="property">Type:</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.threebed" [ngModelOptions]="{ standalone: true }">
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.thsize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.thprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: transparent;" class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="property">Type</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.fourbed" [ngModelOptions]="{ standalone: true }">
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.fusize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.fuprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background-color: transparent;" class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <label for="property">Type:</label>
+                        <input class="form-control" type="text" id="type" name="type" [(ngModel)]="formData.fivebed" [ngModelOptions]="{ standalone: true }">
+                    </div>
+                    <div class="col">
+                        <label for="property">Size:</label>
+                        <input class="form-control" type="text" id="size" name="size" [(ngModel)]="formData.fvsize" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                    <div class="col">
+                        <label for="property">Price:</label>
+                        <input class="form-control" type="text" id="price" name="price" [(ngModel)]="formData.fvprice" [ngModelOptions]="{ standalone: true }"> 
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+			<div class="">
+				<label for="furnished">Furnished:</label>
+				<input class="form-control" type="name"  name="furnished" id="furnished" value="furnished" [(ngModel)]="formData.furnished" [ngModelOptions]="{ standalone: true }">
+			</div>
+			
+            <label for="units">Units:</label>
+            <input class="form-control" type="text" id="units" name="units" [(ngModel)]="formData.units" [ngModelOptions]="{ standalone: true }">
+            <label for="paymentyear">Payment Plan Years:</label>
+            <input class="form-control" type="text" id="paymentyear" name="paymentyear"  [(ngModel)]="formData.paymentyear" [ngModelOptions]="{ standalone: true }">
+
+            <label for="paymentplan">Payment Plan:</label>
+            <input class="form-control" type="text" id="paymentplan" name="paymentplan"  [(ngModel)]="formData.paymentplan" [ngModelOptions]="{ standalone: true }">
+
+            <label for="psfaverage">PSF Prices Average:</label>
+            <input class="form-control" type="text" id="psfaverage" name="psfaverage" [(ngModel)]="formData.psfaverage" [ngModelOptions]="{ standalone: true }">
+
+            <label for="booking">Booking:</label>
+            <input class="form-control" type="text" id="booking"  name="booking" [(ngModel)]="formData.booking" [ngModelOptions]="{ standalone: true }">
+
+            <label for="firstinstallment">First Installment:</label>
+            <input class="form-control" type="text" id="firstinstallment" name="firstinstallment" value="01% after 3 mnt" [(ngModel)]="formData.firstinstallment" [ngModelOptions]="{ standalone: true }">
+
+			<div class="">
+				<label for="freehold">Freehold:</label>
+				<input class="form-control" type="name"  name="freehold" id="freeholdYes" value="freehold" [(ngModel)]="formData.freehold" [ngModelOptions]="{ standalone: true }">
+			</div>
+	
+
+            <label for="dld">DLD Payable:</label>
+            <input class="form-control" type="text" id="dld" name="dld" [(ngModel)]="formData.dld" [ngModelOptions]="{ standalone: true }">
+
+            <label for="handover">Handover:</label>
+            <input class="form-control" type="text" id="handover"name="handover" type="date"  [(ngModel)]="formData.handover" [ngModelOptions]="{ standalone: true }">
+
+            <label for="posthandover">Post Handover:</label>
+            <input class="form-control" type="text" id="posthandover" name="posthandover"  [(ngModel)]="formData.posthandover" [ngModelOptions]="{ standalone: true }">
+
+            <label for="servicecharges">Service Charges:</label>
+            <input class="form-control" type="text" id="servicecharges" name="servicecharges"  [(ngModel)]="formData.servicecharges" [ngModelOptions]="{ standalone: true }">
+            <label for="maidroom">Maid Room:</label>
+            <input class="form-control" type="text" id="maidroom" name="maidroom"  [(ngModel)]="formData.maidroom" [ngModelOptions]="{ standalone: true }">
+
+            <label for="floors">Floors:</label>
+            <input class="form-control" type="text" id="floors" name="floors"  [(ngModel)]="formData.floors" [ngModelOptions]="{ standalone: true }">
+
+            <label for="desp">Description:</label>
+            <textarea style="background-color: transparent;" class="form-control" rows="5" id="desp" name="desp" [(ngModel)]="formData.desp" [ngModelOptions]="{ standalone: true }">Please fill the field</textarea>
+
+           
+
+			
+
+            <label for="lunchdate">Launch Date:</label>
+            <input class="form-control" type="text" id="lunchdate" value="Dec-22" type="date"  name="lunchdate" [(ngModel)]="formData.lunchdate" [ngModelOptions]="{ standalone: true }">
+
+            <label for="status">Status:</label>
+            <input class="form-control" type="text" id="status" value="Offplan" name="status" [(ngModel)]="formData.status" [ngModelOptions]="{ standalone: true }">
+
+            <button class="btn btn-success btn-submit" type="submit">Submit</button>
+            <button class="btn btn-danger btn-cancel" (click)="goBack()">Cancel</button>
+        </form>
+    </div> 
+</body>
+</html>
+
+
+
+
+            <!-- <select *ngIf="true" class="form-select" id="select" name="select" [(ngModel)]="formData.select" [ngModelOptions]="{ standalone: true }">
+                <option value="studio" id="studio" name="studio" [(ngModel)]="formData.studio" [ngModelOptions]="{ standalone: true }">Studio</option>
+                <option value="onebed" id="onebed" name="onebed" [(ngModel)]="formData.onebed" [ngModelOptions]="{ standalone: true }">One Bed</option>
+                <option value="twobed" id="twobed" name="twobed" [(ngModel)]="formData.twobed" [ngModelOptions]="{ standalone: true }">Two Bed</option>
+                <option value="threebed" id="threebed" name="threebed" [(ngModel)]="formData.threebed" [ngModelOptions]="{ standalone: true }">Three Bed</option>
+                <option value="fourbed" id="fourbed" name="fourbed" [(ngModel)]="formData.fourbed" [ngModelOptions]="{ standalone: true }">Four Bed </option>
+                <option value="fivebed" id="fivebed" name="fivebed" [(ngModel)]="formData.fivebed" [ngModelOptions]="{ standalone: true }">Five Bed </option>
+            </select> -->

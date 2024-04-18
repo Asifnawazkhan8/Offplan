@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+}
+#con1{
+    background: transparent; 
+    width: 50%;
+    
+}
+input{
+    background:transparent; 
+    color:black; 
+    
+}
+label{
+    background:transparent;
+     color:black;
+}
+* Default styling for the label */
+.form-check-label {
+    color: black;
+}
+
+/* Styling for the "Yes" label when the radio button is checked */
+.form-check-input#freeholdYes:checked + .form-check-label {
+    color: green;
+}
+
+/* Styling for the "No" label when the radio button is checked */
+.form-check-input#freeholdNo:checked + .form-check-label {
+    color: red;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container-fluid {
+            margin-top: 2%;
+			width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .btn-submit {
+            width: 30%;
+            margin-left: 20%;
+            font-size: 1.1em;
+        }
+        .btn-cancel {
+            width: 30%;
+            margin-left: 5px;
+            font-size: 1.1em;
+        }
